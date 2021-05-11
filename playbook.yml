@@ -1,0 +1,13 @@
+---
+- name: Print hello world
+  hosts: localhost
+  
+  vars:
+   first_name: Naresh
+   last_name: Murugan
+
+  tasks:
+   - name: print hello world
+     debug:
+      msg: "Hello world from {{ first_name }} {{ last_name }}"
+...
