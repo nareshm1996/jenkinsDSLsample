@@ -6,7 +6,7 @@ pipeline{
                 
             ansiblePlaybook(
                 installation: 'ansible',
-                playbook: playbook.yml,
+                playbook: 'playbook.yml',
                 inventory: 'localhost',
                 vaultCredentialsId: 'vault_pass',
                 colorized: true
